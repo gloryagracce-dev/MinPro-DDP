@@ -15,15 +15,15 @@ PENJELASAN ALUR FLOWCHART:
 
 2. Menu 1 : Tambah Buku
    
-   Bagian ini berfungsi untuk memasukkan catatan baru. kita diminta untuk mengisi informasi yang dibutuhkan, lalu data itu langsung disimpan ke dalam daftar. sebelum kembali ke menu, program memberitahu kalau proses penyimpanan sudah berhasil, supaya kamu yakin data sudah masuk.
+   Bagian ini berfungsi untuk memasukkan catatan baru. lalu diminta untuk mengisi informasi yang dibutuhkan, dan data itu langsung disimpan ke dalam daftar. sebelum kembali ke menu, program memberitahu kalau proses penyimpanan sudah berhasil, supaya untuk yakin data sudah masuk.
 
 3. Menu 2 : Lihat Semua Buku
    
-   Sebelum menampilkan apapun, program mengecek dulu apakh di dalam daftar sudah ada catatan atau masih kosong? Kalau belum ada, program akan kasih tahu supaya tidak bingung. Kalau sudah ada, semua data ditampilkan secara rapi dan berurutan. setelah selesai dilihat, otomatis kembali ke menu utama.
+   Sebelum menampilkan apapun, program mengecek dulu apakh di dalam daftar sudah ada catatan atau masih kosong, Kalau belum ada, program akan kasih tahu supaya tidak bingung. Kalau sudah ada, semua data ditampilkan secara rapi dan berurutan. setelah selesai dilihat, otomatis kembali ke menu utama.
 
 4. Menu 3 : Ubah Data Buku
    
-   Di sini program mulai memastikan hal-hal penting, pertama apakah memang sudah ada data yang bisa di ubah? kalau belum ada, langsung kembali. kalau ada, akan diminta menyebutkan nomor urut buku yang ingin diperbaiki. Lalu dicek lagi apakah nomor yang udah diberikan itu benar-benar ada di daftar? Kalau salah nomor, langsung diberi tahu. kalau benar, baru kamu diminta mengisi data yang baru, data lama diganti dengan yang baru, lalu disimpan dan dikonfirmasi sudah berhasil.
+   Di sini program mulai memastikan hal-hal penting, pertama apakah memang sudah ada data yang bisa di ubah, kalau belum ada, langsung kembali. kalau ada, akan diminta menyebutkan nomor urut buku yang ingin diperbaiki. Lalu dicek lagi apakah nomor yang udah diberikan itu benar-benar ada di daftar, Kalau salah nomor, langsung diberi tahu. kalau benar, baru akan diminta mengisi data yang baru, data lama diganti dengan yang baru, lalu disimpan dan dikonfirmasi sudah berhasil.
 
 5. Menu 4 : Hapus Buku
    
