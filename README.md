@@ -42,42 +42,63 @@ SCREENSHOT OUTPUT :
 PENJELASAN CODE PROGRAM PYTHON :
 
 1. Tempat Simpan Data
+   
    daftar_buku = []
    
    Ini adalah tempat penyimpanan utama, berbentuk daftar kosong. nanti semua data buku yang sudah dimasukkan akan tersimpan di sini. bentuknya pakai "list" supaya bisa ditambah, dilihat, diubah, maupun dihapus isinya. setiap satu buku disimpan berpasangan (judul sama halamannya), pakai bentuk "tuple" agar datanya tetap utuh satu pasang.
 
 3. Perulangan Menu
+   
    while True:
+   
    Bagian ini yang bikin program berjalan berulang-ulang terus. artinya "kerjakan apa yang ada di dalam sini, berulang tanpa berhenti, sampai ada perintah berhenti". jadi setiap selesai satu pekerjaan, menu akan muncul lagi secara otomatis, seperti di flowchart sampai pilih angka 5 untuk keluar.
 
-4. Tampilan Dan Pilihan
+5. Tampilan Dan Pilihan
+   
    print("===== MENU DAFTAR BUKU =====")
+   
    pilihan = input("Masukkan pilihan angka [1-5]:")
+   
    Di sini program menampilkan semua pilihan yang bisa dikerjakan, lalu menunggu untuk mengetik angka. angka yang diketik disimpan sementara buat diperiksa selanjutnya.
 
-5. Cek Pilihan Benar Atau Salah
+7. Cek Pilihan Benar Atau Salah
+   
    if pilihan not in ["1","2","3","4","5",]:
+   
       print("Pilihan tidak ada! Coba lagi.")
+   
       continue
+   
    Bagian ini pengaman penting. program langsung mengecek apakah yang diketik itu salah satu dari angka 1-5 atau huruf, kalau salah program langsung kasih tahu, lalu continue artinya, langsung balik ke menu awal lagi, jangan lanjut ke bawah. jadi program tidak akan rusak atau berhenti, tetap aman.
 
-6. Bagian Tambah Buku
+9. Bagian Tambah Buku
+    
    if pilihan == "1":
+   
       nama = input("...")
+   
       daftar_buku.append((nama, hal))
+   
       print("Berhasil ditambahkan!")
+   
    Jika pilih angka 1, program akan minta isi judul buku dan halaman buku. lalu data itu digabung jadin satu pasang (nama,halamman), dimasukkan ke dalam daftar pakai append artinya "tambahkan ke bagian paling belakang daftar". terus dikasih tahu sudah berhasil masuk.
 
-7. Bagian Lihat Semua Buku
+11. Bagian Lihat Semua Buku
+    
    elif pilihan == "2":
+
       if len(daftar_buku) == 0:
+      
           print("Belum ada catatan buku.")
+          
     else:
        for i, buku in enumerate(daftar_buku, start=1):
+       
            print(f"{i}. Judul: {buku[0]} | Halaman: {buku[1]}")
+           
    pertama dicek dulu "len" artinya jumlah isinya. kalau jumlah nol = kosong, kasih tahu belum ada data. kalau sudah ada, diproses satu-satu pakai "for" artinya ulangi untuk setiap isi yang ada di dalam daftar. "enumerate" fungsinya memberi nomor urut otomatis mulai dari 1, supaya tampilannya rapi. buku[0] itu judul, buku[1] itu angka halaman.
 
-8. Bagian Ubah Data Buku
+13. Bagian Ubah Data Buku
    elif pilihan == "3":
       if len(daftar_buku) == 0:
          print("Belum ada data buku.")
@@ -90,7 +111,7 @@ PENJELASAN CODE PROGRAM PYTHON :
           print("Nomor buku tidak ada!")
   bagian ini dicek dulu ada data atau tidak, kalau kosong langsung balik. kalau ada, makan akan diminta masukin nomor urut dan dikurangi 1 karena hitungan komputer mulai dari nol. terus dicek lagi apakah nomor itu masuk batas yang benar, kalau masuk data lama diganti langsung dengan yang baru di posisi nomor itu. kalau nomornya kebesaran atau kurang, langsung dikasih tahu tidak ada.
 
-9. Bagian Hapus Buku
+14. Bagian Hapus Buku
    elif pilihan == "4":
      if len(daftar_buku) == 0:
         print("Belum ada data buku.")
@@ -103,7 +124,7 @@ PENJELASAN CODE PROGRAM PYTHON :
           print("Nomor buku tidak ada!")
    Cara kerjanya mirip ubah data cek dulu ada isinya atau tidak, lalu pastikan nomornya benar. kalau semua sudah oke, pakai perintah "pop" artinya keluarkan dan hapus data yang ada di posisi nomor ini". setelah dihapus, daftar otomaatis merapikan nomor urutnya sendiri.
 
-10. Bagian Keluar Dari Program
+15. Bagian Keluar Dari Program
     elif pilihan == "5":
        print("Program selasai. Terima kasih!")
        break
