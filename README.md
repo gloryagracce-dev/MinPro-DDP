@@ -29,9 +29,11 @@ PENJELASAN ALUR FLOWCHART:
 
    Program ini dirancang supaya berulang terus, selesai satu slide, balik ke menu, siap dikerjakan lagi, sampai bisa memutuskan berhenti. semua langkahnya selalu ada pengecekkan dulu supaya tidak ada data yang salah masuk, tidak ada data yang salah masuk, tidak ada ubah atau hapus yang gagal, dan program tetap aman dipakai.
 
-   <img width="960" height="600" alt="Screenshot 2026-09-11 202112" src="https://github.com/user-attachments/assets/4817d076-055d-46e1-845a-6ec302169751" />
+SCREENSHOT OUTPUT :
 
-<img width="960" height="600" alt="Screenshot 2026-09-11 202037" src="https://github.com/user-attachments/assets/d43e5904-8fc6-4780-908a-d836bfcdbacb" />
+<img width="960" height="600" alt="Screenshot 2026-09-11 202037" src="https://github.com/user-attachments/assets/50277ac5-6639-43a4-84a7-fa71d57dea9b" />
+
+<img width="960" height="600" alt="Screenshot 2026-09-11 202112" src="https://github.com/user-attachments/assets/a7070da9-8c23-4e16-aa54-1502eac23eff" />
 
 <img width="960" height="600" alt="Screenshot 2026-09-11 202127" src="https://github.com/user-attachments/assets/fd38f77d-af70-437d-bb92-2f7317268836" />
 
